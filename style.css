@@ -1,0 +1,429 @@
+html, body {
+    background: #f7f7f7;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .slider {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .slide_viewer {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  .slide_viewer.slide_of_sub_page{
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+  }
+  .slide_viewer.slide_of_sub_page .slide_group .slide .desc_of_slide{
+    top: 55%;
+  }
+  .slide_viewer.slide_of_sub_page .slide_group .slide .desc_of_slide h2{
+font-size: 30px;
+  }
+  .slide_group {
+    height: 100%;
+    position: relative;
+    width: 100%;
+  }
+  
+  .slide {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .slide:first-child {
+    display: block;
+  }
+  
+  .slide {
+background-repeat: no-repeat;
+background-size: cover;
+
+  }
+  
+  
+header{
+    position: absolute;
+    z-index: 10000;
+    width: 100%;
+    text-align: center;
+    top: 10%;
+}
+header.sub_page_content_header{
+    top: 5%;
+}
+header h1{
+    color: white;
+    font-size: 42px
+}
+.nav_bar_item{
+    list-style: none;
+    border-top: 1px solid #f6e9e9ba;
+    padding-top: 20px;
+    /* margin: 1px auto; */
+    /* margin-right: 22%; */
+    /* margin-left: 22%; */
+    width: 50%;
+    margin: auto;
+}
+.nav_bar_item li{
+    display: inline-block; 
+    padding-right: 20px;
+    font-size: 20px;
+}
+.nav_bar_item li a{
+
+    text-decoration: none;
+    color: white;
+}
+.desc_of_slide {
+    position: relative;
+    top: 45%;
+    text-align: center;
+}
+.desc_of_slide h2{
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+.desc_of_slide h5{
+    font-size: 18px;
+    color: white;
+}
+.nav_bar_item .has_children .children_of_li{
+    background-color: white;
+    list-style: none;
+    display: table-caption;
+    color: black;
+    margin-top: 11px;
+    padding: 30px;
+    text-align: left;
+    width: 185px;
+    display: none;
+    position: absolute;
+}
+.nav_bar_item .has_children .children_of_li li a{
+
+    color: black;
+}
+.nav_bar_item .has_children {
+    padding-bottom: 20px;
+}
+.nav_bar_item .has_children .children_of_li li {
+display: block;
+ padding-right: 3px;
+ text-align: left;
+ margin-bottom: 10px;
+ padding: 5px;
+}
+.nav_bar_item .has_children .children_of_li li:hover {
+ background-color:#8D6C61;
+    }
+    .nav_bar_item .has_children .children_of_li li:hover a{
+        color: white;
+    }
+    .nav_bar_item .has_children:hover .children_of_li{
+        display: table-caption;
+    }
+
+.product_section_title{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.product_section_title h1{
+    font-size: 34px;
+    color: #000000de;
+}
+.product_content{
+    background-color: #f7f7f7;
+}
+.container_section {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media (min-width: 576px) {
+    .container_section {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container_section {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container_section {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container_section {
+      max-width: 1238px
+    }
+  }
+  .product_content .card{
+    width: 20%;
+    background: white;
+    padding: 15px;
+    margin-bottom: 30px;
+    display: inline-block;
+    margin-left: 25px;
+    border-radius: 9px;
+  }
+  .product_content .img_of_card{
+      max-height: 200px;
+      overflow: hidden;
+      
+  }
+  .product_content .card:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .product_content .card .card_body{
+      text-align: center;
+  }
+  .product_content .card .card_body a{
+      text-decoration: none;
+      color: black;
+  }
+  .product_content .card .card_body .mony_of_product a{
+      color: #e7807c;
+      font-family: sans-serif;
+  }
+  .product_content .card .card_body h3{
+    font-size: 16px;
+    font-family: sans-serif;
+  }
+  .product_content .card .card_body p,.product_content .card .card_body p a{
+    font-size: 14px;
+    font-family: sans-serif;
+    color: gray;
+  }
+  .product_content .card .card_body p a:hover{
+      color: red;
+  }
+  .product_content .card_button{
+    text-align: center;
+    margin-top: 27px;
+    margin-bottom: 15px;
+
+  }
+  .product_content .card_button button{
+    background: none;
+    border: none;
+    border: 1px solid #e7807c;
+    padding: 10px 29px;
+    border-radius: 50px;
+
+  }
+  .product_content .card_button button a{
+      color: red;
+  }
+  .product_content .card_button button:hover {
+      background-color: #ff9d9e;
+
+  }
+  .product_content .card_button button:hover a {
+  color: white;
+    
+}
+    
+/****************** contact us *********************/
+
+.myform {
+    padding: 10px;
+    text-align: right;
+    width: 70%;
+    margin: auto;
+    margin-top: 60px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.myform form {
+    background: #fff;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    padding: 25px 0;
+}
+.myform input {
+    width: 100%;
+    height: 45px;
+    margin: 5px;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    background: #f7f7f7;
+    text-align: right;
+    margin-top: 10px;
+    display: block;
+}
+
+label{
+    display: block;
+}
+
+.myform textarea {
+    width: 100%;
+    border: 0;
+    resize: none;
+    min-height: 200px;
+    background: #f7f7f7;
+}
+input[type="button"] {
+    background: #e7807c;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    height: 50px;
+    padding: 0;
+    text-align: center;
+}
+input[type="submit"] {
+  background: #e7807c;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  height: 50px;
+  padding: 0;
+  text-align: center;
+}
+/* .re {
+  background: #e7807c;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  height: 50px;
+  padding: 0;
+  text-align: center;
+  width: 70%;
+  margin: 5px;
+  border: 1px solid #fff;
+  border-radius: 7px;
+  margin-top: 10px;
+  display: block;
+} */
+input[type="submit"]:hover{
+    background: #ff9d9e;
+}
+.re:hover{
+  background: #ff9d9e;
+}
+/***************** about us *********************/
+
+
+.about{
+    padding: 50px;
+    text-align: left;
+    width: 70%;
+    margin: auto;
+    margin-top: 60px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/********************** footer *****************/
+
+footer{
+    background: #333;
+    text-align: center;
+    padding: 35px;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 60px;
+}
+
+/********************* cart ************************/
+
+.cart{
+    padding: 50px;
+    text-align: right;
+    width: 70%;
+    margin: auto;
+    margin-top: 60px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: #eee solid 1px;
+}
+
+.cart-table__head {
+    background: #f7f7f7;
+    font-size: 15px;
+}
+
+
+.cart-table__column {
+    padding: 12px 18px;
+    border-top: 1px solid #ebebeb;
+}
+
+
+.cart__totals {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.cart__totals-footer {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.cart-table__product-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-pyment{
+    padding: 15px 35px;
+    background: #e7807c;
+    color: #fff;
+}
