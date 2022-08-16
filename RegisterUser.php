@@ -2,11 +2,7 @@
     include 'connection.php'; 
     
         
-        // $Uname=$_POST['username'];
-        // $email=$_POST['email'];
-        // $pass=$_POST['pass'];
-        // $phone=$_POST['phone'];
-        // $confPass=$_POST['confirm_password'];
+       
         $username=$_GET['username'];
         $email=$_GET['email'];
         $pass=$_GET['pass'];
