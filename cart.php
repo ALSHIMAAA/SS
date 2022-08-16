@@ -1,5 +1,5 @@
 <?php
-    include 'connection.php'; //استدعاء ملف الاتصال بقاعدة البيانات
+    include 'connection.php'; 
     $order=1;
 if (isset($_POST["btn_remove"])){
     $pro_id = $_GET["proID"];
