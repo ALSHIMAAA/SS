@@ -1,5 +1,5 @@
 <?php
-    include 'connection.php'; //استدعاء ملف الاتصال بقاعدة البيانات
+    include 'connection.php'; 
     
         
         // $Uname=$_POST['username'];
@@ -19,8 +19,8 @@
         else {
             
             $query = "INSERT INTO users(username,email,phon,pass) VALUES ('$username','$email','$phone','$pass')";
-            $statement = $conn->prepare($query); //$conn هو ابجيكت الاتصال بقاعده البيانات قمنا بانشاءه في ملف الاتصال بقاعده البيانات
-            $statement->execute(); //تنفيذ جملة الادخال
+            $statement = $conn->prepare($query); 
+            $statement->execute();   
             echo  "تم انشاء الحساب بنجاح";
         }
                 
